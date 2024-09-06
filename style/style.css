@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --p-color: rgba(255, 255, 255, 0.8);
+    --primary-color: rgb(255, 197, 54);
+}
+
+.title{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+p{
+    color: var(--p-color);
+    line-height: 1.6;
+}
+
+
+/* 
+Header Section ------------------------------------
+*/
+.header-section{
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(90.00deg, rgb(5, 8, 24),rgba(5, 8, 24, 0) 100%) ,url("../assets/Rectangle\ 19.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* 
+Nav bar section ------------------------------------
+*/
+.navbar-section{
+    width: 100%;
+}
+
+.nav{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.brand h1 span{
+    background: linear-gradient(to right,rgb(255, 197, 54),
+    rgba(255, 198, 54, 0.259));
+    background-clip: text;
+    color: transparent;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu .list-item{
+    margin: 0 5px;
+}
+
+.menu-link{
+    color: var(--p-color);
+    padding: 10px 20px;
+}
+
+.outline-btn{
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    font-weight: 500;
+    border-radius: 8px;
+} 
+
+.menu-icon{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+/* 
+Hero Section -------------------------------------
+*/
+.hero-section{
+    max-width: 1400px;
+    height: 85%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content{
+    max-width: 650px;
+}
+
+.hero-content h1{
+    color: white;
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.hero-content h1 span{
+    color: var(--primary-color);
+}
+
+.hero-content .button-div{
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hero-content .button-div .outline-btn{
+    border-color: white;
+    color: white;
+}
+
+.button{
+    border: none;
+    padding: 16px 30px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+
+/* 
+New released games Section -------------------------
+*/
+.games-section{
+    width: 100%;
+    background: rgb(5, 8, 24);
+}
+
+.games-content{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+
+.games-content > p{
+    margin: 20px auto 50px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.games-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.games-item{
+    width: 100%;
+    position: relative;
+}
+
+.games-item .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(90.00deg, rgba(5, 8, 24, 0.727) -21.083%,rgba(5, 8, 24, 0) 100%);
+}
+
+.games-item img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.item-bottom{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.item-bottom button{
+    border: none;
+    background-color: var(--primary-color);
+    padding: 6px 10px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.item-bottom h3{
+    color: white;
+    font-weight: 600;
+    max-width: 250px;
+    margin: 15px 0 10px;
+}
+
+.item-bottom p{
+    font-size: .9rem;
+}
+
+.item-bottom p i{
+    color: var(--primary-color);
+}
+
+
+/* 
+Gaming Studio Section ----------------------
+*/
+.gaming-studio-section{
+    background: linear-gradient(to bottom,rgb(18, 20, 36),rgb(5, 8, 24) 100%);
+}
+
+.gaming-studio-content{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.gaming-studio-content h2{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.gaming-studio-content > p{
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto 50px;
+}
+
+.gaming-studio-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.studio-item{
+    background: linear-gradient(to bottom,rgb(18, 20, 36),rgb(5, 8, 24) 100%);
+    padding: 30px;
+    grid-column: span 2;
+    box-shadow: rgba(5, 8, 24) 0px 7px 29px 0px;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.studio-item img{
+    width: 40px;
+}
+.studio-item-3{
+    grid-column: 2 / 4;
+}
+
+.item-content h5{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.item-content p{
+    font-size: .9rem;
+}
+
+
+/* 
+Banner Section --------------------------------------
+*/
+.banner-section{
+    width: 100%;
+    background-image: linear-gradient(to right,rgb(5, 8, 24),
+    rgba(5, 8, 24, 0)), url("../assets/Rectangle\ 27.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 30px;
+}
+
+.banner-content{
+    max-width: 470px;
+}
+
+.banner-content h2{
+    color: white;
+    font-size: 2.1rem;
+}
+
+.banner-content p{
+    margin: 20px 0;
+    font-size: .9rem;
+}
+
+
+/* 
+Our Sponsors -----------------------------------
+*/
+.sponsors-section{
+    width: 100%;
+    background: rgb(5, 8, 24);
+}
+
+.sponsors-content{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 30px 50px;
+}
+
+.sponsors-content  p{
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.sponsors-container{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0 80px;
+}
+
+.container-img{
+    width: 110px;
+}
+
+.container-img img{
+    width: 100%;
+}
+
+.footer{
+    border-radius: 4px;
+    background-color: var(--primary-color);
+}
+
+.footer p{
+    padding: 15px;
+    color: rgb(5, 8, 24);
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/* 
+--------------------- Responsive ----------------------
+*/
+@media screen and (max-width: 993px) {
+    
+    .menu-icon{
+        display: block;
+    }
+
+    .menu,
+    .nav button{
+        display: none;
+    }
+
+    .games-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .gaming-studio-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .studio-item{
+        grid-column: auto;
+    }
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .games-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-content h1{
+        font-size: 2.8rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+    
+    p{
+        font-size: .9rem;
+    }
+
+    .outline-btn,
+    .button{
+        padding: 15px 20px;
+    }
+
+}
